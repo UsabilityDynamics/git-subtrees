@@ -1,0 +1,15 @@
+## Install Git Command
+##
+## Install:
+## $ curl --silent https://gist.githubusercontent.com/andypotanin/e3db79c92f911d040c16/raw/git-subtrees > /usr/local/git/bin/git-subtrees && chmod +x /usr/local/git/bin/git-subtrees
+##
+## Usage:
+## $ git subtrees
+
+echo "Listing Git subtrees."
+(git log | grep git-subtree-dir | tr -d ' ' | cut -d ":" -f2 | sort | uniq) | 
+    while read path
+    do
+      ## Do something with each subtree 
+      echo " - ${path}"
+    done
