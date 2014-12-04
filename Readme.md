@@ -8,7 +8,7 @@ Installation
 ------------
 
 ```sh
-curl --silent https://raw.github.com/UsabilityDynamics/git-subtrees/master/git-subtrees > /usr/local/bin/git-subtrees && chmod +x /usr/local/bin/git-subtrees
+curl --silent https://raw.githubusercontent.com/UsabilityDynamics/git-subtrees/master/git-subtrees > /usr/local/bin/git-subtrees && chmod +x /usr/local/bin/git-subtrees
 ```
 
 Usage
